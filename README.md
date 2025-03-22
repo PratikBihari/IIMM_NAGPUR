@@ -1,70 +1,56 @@
 # IIMM Nagpur Branch Website
 
-This repository contains the source code for the Indian Institute of Materials Management (IIMM), Nagpur Branch website.
+This repository contains the official website for the Indian Institute of Materials Management (IIMM) Nagpur Branch.
 
 ## Overview
 
-The IIMM Nagpur Branch website is a professional, responsive website for an educational institution specializing in Materials Management and Supply Chain education. The website provides information about the institute, its courses, admission procedures, events, membership options, and contact details.
+The IIMM Nagpur Branch website provides information about:
+- Educational programs in Materials Management and Supply Chain Management
+- Events and activities organized by the branch
+- Membership details and benefits
+- Institute facilities and campus life
+- Contact information and admissions process
 
 ## Features
 
-- Responsive design for all devices
-- Modern and professional UI
-- Interactive navigation
-- Course information
-- Admission application form
-- Events calendar
-- Membership details
-- Contact form
-- Google Maps integration
+- Responsive design that works on all devices
+- Modern user interface with visual appeal
+- Interactive elements for better user engagement
+- Comprehensive information about courses and programs
+- Student testimonials and campus gallery
 
-## Technologies Used
+## Technology Stack
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
-- FontAwesome Icons
+- JavaScript
+- Font Awesome for icons
 - Google Fonts
-- Google Maps
 
-## Structure
+## GitHub Pages Setup
 
-The website has the following sections:
+To host this website using GitHub Pages:
 
-1. **Home**: Landing page with hero section
-2. **About Us**: Information about IIMM Nagpur Branch
-3. **Courses**: Detailed information about courses offered
-4. **Admissions**: Admission process and application form
-5. **Events**: Upcoming events and activities
-6. **Membership**: Membership options and benefits
-7. **Contact**: Contact information and form
+1. Go to the repository settings at https://github.com/PratikBihari/IIMM_NAGPUR/settings
+2. Navigate to the "Pages" section in the sidebar
+3. Under "Source", select "main" branch
+4. Click "Save"
+5. Your site will be published at https://pratikbihari.github.io/IIMM_NAGPUR/
 
-## Setup
+## Local Development
 
-1. Clone this repository
-2. Open `index.html` in a web browser
+To run this website locally:
 
-## Images
-
-The website uses the following placeholders for images:
-- `hero-bg.jpg`: Hero section background
-- `about-image.jpg`: Image for About section
-- `course1.jpg`, `course2.jpg`, `course3.jpg`: Course images
-
-To replace these with actual images, add your images to the `images` folder and update the file paths in the HTML and CSS if necessary.
-
-## Customization
-
-You can customize the website by:
-- Changing the color scheme in the CSS variables at the top of `css/styles.css`
-- Updating text content in `index.html`
-- Adding or removing sections as needed
-- Replacing placeholder images with actual images
-
-## License
-
-This project is open-source and available for educational purposes.
+1. Clone the repository: `git clone https://github.com/PratikBihari/IIMM_NAGPUR.git`
+2. Navigate to the project directory: `cd IIMM_NAGPUR`
+3. Open `index.html` in your preferred browser
 
 ## Contact
 
-For any inquiries about this website, please contact the developer. 
+For questions or suggestions, please contact:
+- Email: info@iimmnagpur.org
+- Phone: +91 712 2554231
+
+## License
+
+© 2023 IIMM Nagpur Branch. All Rights Reserved. 
