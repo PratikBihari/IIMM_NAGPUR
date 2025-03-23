@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /js/
+Disallow: /css/
+Disallow: /images/
+Sitemap: https://pratikbihari.github.io/IIMM_NAGPUR/sitemap.xml
