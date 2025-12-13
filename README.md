@@ -48,8 +48,8 @@ To run this website locally:
 ## Contact
 
 For questions or suggestions, please contact:
-- Email: info@iimmnagpur.org
-- Phone: +91 712 2554231
+- Email: iimmnagpur@gmail.com
+- Phone: +91 95118 01508
 
 ## License
 
