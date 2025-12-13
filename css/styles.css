@@ -1230,6 +1230,39 @@ footer {
 }
 
 @media (max-width: 576px) {
+    header {
+        padding: 8px 0 !important;
+    }
+    
+    .header-content {
+        padding: 8px 0 !important;
+    }
+    
+    .logo {
+        flex: 1;
+    }
+    
+    .logo a {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+    }
+    
+    .logo a img {
+        height: 35px !important;
+        display: block !important;
+        visibility: visible !important;
+        margin-right: 8px !important;
+        order: 1;
+    }
+    
+    .logo h1 {
+        font-size: 1rem !important;
+        display: block !important;
+        white-space: nowrap;
+        order: 2;
+    }
+    
     section {
         padding: 40px 0;
     }
@@ -1249,9 +1282,16 @@ footer {
     }
     
     .hero-logo {
-        width: 80px;
-        height: 80px;
-        margin-bottom: 0.5rem;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 1rem;
+        display: flex !important;
+    }
+    
+    .hero-logo img {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
     }
     
     .hero-content h1 {
