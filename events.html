@@ -27,6 +27,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes shimmer {
+            0% { background-position: -1000px 0; }
+            100% { background-position: 1000px 0; }
+        }
+        .natcom-container {
+            animation: fadeInUp 0.8s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+        .natcom-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: shimmer 3s infinite;
+            z-index: 1;
+        }
+        .natcom-container img {
+            transition: transform 0.5s ease;
+        }
+        .natcom-container:hover img {
+            transform: scale(1.05);
+        }
         @media (max-width: 768px) {
             .events [style*="padding: 40px"] { padding: 20px !important; }
             .events [style*="padding: 30px"] { padding: 20px !important; }
@@ -74,12 +108,16 @@
                 <p>Stay updated with our conferences, workshops, and networking sessions</p>
             </div>
             
-            <div style="background: white; border-radius: 15px; overflow: hidden; margin-bottom: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
-                <img src="images/NATCOM 2026.jpeg" alt="NATCOM 2026" style="width: 100%; height: auto; display: block;">
-                <div style="background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%); padding: 30px; color: white; text-align: center;">
-                    <h3 style="color: white; font-size: 32px; margin-bottom: 15px; font-weight: 700;">🌟 NATCOM 2026</h3>
-                    <p style="font-size: 20px; opacity: 0.95; font-weight: 600;">National Convention hosted by IIMM Nagpur Branch</p>
-                    <p style="font-size: 16px; opacity: 0.9; margin-top: 10px;">A prestigious national-level platform for industry leaders and professionals</p>
+            <div class="natcom-container" style="background: white; border-radius: 20px; overflow: hidden; margin-bottom: 50px; box-shadow: 0 20px 60px rgba(255, 107, 53, 0.3); border: 3px solid transparent; background-image: linear-gradient(white, white), linear-gradient(135deg, #FF6B35, #F7931E); background-origin: border-box; background-clip: padding-box, border-box;">
+                <div style="position: relative; overflow: hidden;">
+                    <img src="images/NATCOM 2026.jpeg" alt="NATCOM 2026" style="width: 100%; height: auto; display: block; filter: brightness(1.05);">
+                    <div style="position: absolute; top: 20px; right: 20px; background: rgba(255, 107, 53, 0.9); color: white; padding: 10px 20px; border-radius: 50px; font-weight: 700; font-size: 14px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); animation: pulse 2s infinite;">🔥 UPCOMING</div>
+                </div>
+                <div style="background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%); padding: 35px; color: white; text-align: center; position: relative;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, transparent, white, transparent); opacity: 0.5;"></div>
+                    <h3 style="color: white; font-size: 32px; margin-bottom: 15px; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">🌟 NATCOM 2026</h3>
+                    <p style="font-size: 20px; opacity: 0.95; font-weight: 600; margin-bottom: 10px;">National Convention hosted by IIMM Nagpur Branch</p>
+                    <p style="font-size: 16px; opacity: 0.9; margin: 0;">A prestigious national-level platform for industry leaders and professionals</p>
                 </div>
             </div>
             
