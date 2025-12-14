@@ -68,6 +68,13 @@
             .events [style*="font-size: 24px"] { font-size: 18px !important; }
             .events [style*="font-size: 20px"] { font-size: 16px !important; }
             .events [style*="display: grid"][style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+            .natcom-container [style*="position: absolute"][style*="top: 20px"] {
+                top: 10px !important;
+                right: 10px !important;
+                padding: 6px 12px !important;
+                font-size: 11px !important;
+                opacity: 0.95;
+            }
         }
     </style>
 </head>
@@ -117,7 +124,7 @@
             <div class="natcom-container" style="background: white; border-radius: 20px; overflow: hidden; margin-bottom: 50px; box-shadow: 0 20px 60px rgba(255, 107, 53, 0.3); border: 3px solid transparent; background-image: linear-gradient(white, white), linear-gradient(135deg, #FF6B35, #F7931E); background-origin: border-box; background-clip: padding-box, border-box;">
                 <div style="position: relative; overflow: hidden;">
                     <img src="images/NATCOM 2026.jpeg" alt="NATCOM 2026" style="width: 100%; height: auto; display: block; filter: brightness(1.05);">
-                    <div style="position: absolute; top: 20px; right: 20px; background: rgba(255, 107, 53, 0.9); color: white; padding: 10px 20px; border-radius: 50px; font-weight: 700; font-size: 14px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); animation: pulse 2s infinite;">🔥 UPCOMING</div>
+                    <div class="upcoming-badge" style="position: absolute; top: 20px; right: 20px; background: rgba(255, 107, 53, 0.9); color: white; padding: 10px 20px; border-radius: 50px; font-weight: 700; font-size: 14px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); animation: pulse 2s infinite;">🔥 UPCOMING</div>
                 </div>
                 <div style="background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%); padding: 35px; color: white; text-align: center; position: relative;">
                     <div style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, transparent, white, transparent); opacity: 0.5;"></div>
