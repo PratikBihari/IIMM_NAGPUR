@@ -233,6 +233,60 @@ header {
     width: 100%;
 }
 
+/* Dropdown Menu */
+.main-nav ul li {
+    position: relative;
+}
+
+.main-nav ul li .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.main-nav ul li:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.main-nav ul li .dropdown li {
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li .dropdown li a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--dark-color);
+    transition: all 0.3s ease;
+}
+
+.main-nav ul li .dropdown li a::after {
+    display: none;
+}
+
+.main-nav ul li .dropdown li a:hover {
+    background: var(--light-bg);
+    color: var(--primary-color);
+    padding-left: 25px;
+}
+
+.main-nav ul li > a i {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
 .menu-toggle {
     display: none;
     cursor: pointer;
