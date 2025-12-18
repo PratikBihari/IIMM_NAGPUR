@@ -1,12 +1,3 @@
-// Redirect to home page on reload if not already on home page
-if (performance.navigation.type === 1) {
-    // Page was reloaded
-    const currentPage = window.location.pathname;
-    if (!currentPage.endsWith('index.html') && !currentPage.endsWith('/')) {
-        window.location.replace('index.html');
-    }
-}
-
 // Wait for the document to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
